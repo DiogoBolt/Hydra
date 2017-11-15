@@ -21,6 +21,11 @@ class Product extends Model
         return $this->belongsTo(Brand::class,'brand_id');
     }
 
+    public function promotion()
+    {
+        return $this->belongsTo(PromotionProduct::class,'product_id');
+    }
+
     /**
      * The photo fields should be listed here.
      *

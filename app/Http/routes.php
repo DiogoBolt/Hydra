@@ -35,6 +35,14 @@ route::group(['middleware' => 'auth'], function () {
     Route::post('/products/postedit/{id}', 'ProductController@postEditProduct');
     Route::get('/products/delete/{id}', 'ProductController@deleteProduct');
 
+    //Promotions
+    Route::get('/promotions', 'PromotionController@index');
+    Route::get('/promotions/new', 'PromotionController@newPromotion');
+    Route::post('/promotions/create', 'PromotionController@createPromotion');
+    Route::get('/promotions/edit/{id}', 'PromotionController@editPromotion');
+    Route::post('/promotions/postedit/{id}', 'PromotionController@postEditPromotion');
+    Route::get('/promotions/enable/{id}', 'PromotionController@enablePromotion');
+    Route::get('/promotions/disable/{id}', 'PromotionController@disablePromotion');
     //Orders
 
     //Promotions
