@@ -76,6 +76,20 @@
             </ul>
         </li>
 
+        <li>
+            <a href="#">
+                <i class="fa fa-folder"></i> <span>Promotions</span> <i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+                <li>
+                    <a href="/promotions"><i class="fa fa-folder-open"></i>Promotions</a>
+                </li>
+                <li>
+                    <a href="/promotions/new"><i class="fa fa-folder-open"></i>New Promotion</a>
+                </li>
+            </ul>
+        </li>
+
                     </ul>
 
 
