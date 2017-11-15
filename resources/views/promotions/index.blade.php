@@ -33,6 +33,7 @@
                                         <th>Name</th>
                                         <th>Begin</th>
                                         <th>End</th>
+                                        <th>Percentage</th>
                                         <th>Edit</th>
                                         <th>Status</th>
                                     </tr>
@@ -43,6 +44,7 @@
                                             <td>{{$promotion->name}}</td>
                                             <td>{{$promotion->begin}}</td>
                                             <td>{{$promotion->end}}</td>
+                                            <td>{{$promotion->percentage}}%</td>
                                             <td><a class="btn btn-warning" href="/promotions/edit/{{$promotion->id}}">Edit</a></td>
                                             @if($promotion->active == 1)
                                                 <td><a class="btn btn-danger" href="/promotions/disable/{{$promotion->id}}">Disable</a></td>
