@@ -1,10 +1,10 @@
 
 <div class="navbar-custom-menu">
-    <ul class="nav navbar-nav">
+    <ul class="nav navbar-nav" style="margin-right:50px">
         <li title="Orders" class="messages-menu">
-            <a href="/">
+            <a href="/orders">
                 <i class="fa fa-credit-card"></i>
-                <span class="label label-danger">0</span>
+                <span class="label label-danger" id="orders"></span>
             </a>
         </li>
         <li title="Messages" class="messages-menu">
@@ -24,4 +24,7 @@
         }
     });
 
+    $.get( "orders/unprocessedOrders", function( data ) {
+        $( "#orders" ).html( data );
+    });
 </script>

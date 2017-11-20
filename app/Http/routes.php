@@ -44,7 +44,8 @@ route::group(['middleware' => 'auth'], function () {
     Route::get('/promotions/enable/{id}', 'PromotionController@enablePromotion');
     Route::get('/promotions/disable/{id}', 'PromotionController@disablePromotion');
     //Orders
-
+    Route::get('/orders', 'OrderController@index');
+    Route::get('/orders/unprocessedOrders', 'OrderController@unprocessedOrders');
     //Promotions
 
 
