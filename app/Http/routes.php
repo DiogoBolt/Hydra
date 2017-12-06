@@ -46,6 +46,10 @@ route::group(['middleware' => 'auth'], function () {
     //Orders
     Route::get('/orders', 'OrderController@index');
     Route::get('/orders/unprocessedOrders', 'OrderController@unprocessedOrders');
+    Route::get('/orders/process/{id}', 'OrderController@processOrder');
+    Route::get('/orders/unprocess/{id}', 'OrderController@processOrder');
+    Route::get('/orders/history/', 'OrderController@salesHistory');
+    Route::get('/orders/sales/', 'OrderController@sales');
     //Promotions
 
 

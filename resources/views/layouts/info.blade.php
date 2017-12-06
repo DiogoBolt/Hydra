@@ -35,7 +35,7 @@
 
 			<div class="info-box-content">
 				<span class="info-box-text">Sales</span>
-				<span class="info-box-number">760</span>
+				<span id="sales" class="info-box-number"></span>
 			</div>
 			<!-- /.info-box-content -->
 		</div>
@@ -56,3 +56,9 @@
 	</div>
 	<!-- /.col -->
 </div>
+
+<script>
+    $.get( "orders/sales", function( data ) {
+        $( "#sales" ).html( data + '€');
+    });
+</script>
